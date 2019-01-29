@@ -24,6 +24,8 @@ import livneh_stats_1980_2013 from '../data/livneh-stats-1980-2013.chesapeake-ba
 import county_geojson from '../data/chesapeake_bay_watershed_county_with_fips.json';
 import watershed_geojson from '../data/Chesapeake_Bay_Watershed_CCA.json';
 
+const protocol = window.location.protocol;
+
 export class AppStore {
     // -----------------------------------------------------------------------------------------
     // Display status of Season To Date --------------------------------------------------------
@@ -740,7 +742,8 @@ export class AppStore {
     };
 
     return axios
-      .post("http://grid2.rcc-acis.org/GridData", params)
+      //.post("http://grid2.rcc-acis.org/GridData", params)
+      .post(`${protocol}//grid2.rcc-acis.org/GridData`, params)
       .then(res => {
         //console.log('successful download of livneh data 1950-2010');
         let data = {}
@@ -937,7 +940,8 @@ export class AppStore {
     };
 
     return axios
-      .post("http://grid2.rcc-acis.org/GridData", params)
+      //.post("http://grid2.rcc-acis.org/GridData", params)
+      .post(`${protocol}//grid2.rcc-acis.org/GridData`, params)
       .then(res => {
         console.log('successful download of projection data : ' + scen + ' ' + re + ' 1950-2100');
         let data = {}
