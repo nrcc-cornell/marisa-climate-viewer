@@ -1,6 +1,7 @@
 {
   "name": "nrcc-marisa-climate-viewer",
   "version": "0.1.0",
+  "homepage": "https://marisa-climate.github.io/marisa-climate-viewer",
   "private": true,
   "devDependencies": {
     "custom-react-scripts": "0.2.2",
