@@ -1,0 +1,78 @@
+/*
+///////////////////////////////////////////////////////////////////////////////
+//
+// Climate Smart Farming Climate Change in Your County
+// Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
+// All Rights Reserved
+//
+// This software is published under the provisions of the GNU General Public
+// License <http://www.gnu.org/licenses/>. A text copy of the license can be
+// found in the file 'LICENSE' included with this software.
+//
+// A text copy of the copyright notice, licensing conditions and disclaimers
+// is available in the file 'COPYRIGHT' included with this software.
+//
+///////////////////////////////////////////////////////////////////////////////
+*/
+
+    .csftool-display-map{
+        float:left;
+        //height: 466px;
+        height: 506px;
+        width: 728px;
+        margin: 0 0 0 0;
+        border: none;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .leaflet-container {
+        height: 500px;
+        width: 724px;
+        //margin: 0 auto;
+        z-index: 1;
+    }
+
+    .leaflet-container path{ 
+        transition: fill .75s;
+        //transition: fill 1.0s;
+    }
+
+    .map-container {
+        height: 500px;
+        width: 724px;
+        //margin: 0 auto;
+        z-index: 1;
+    }
+
+    .map-county-label {
+        align: left;
+        text-align: left;
+        background: rgba(255,255,255,0.7);
+        font-size: 16px;
+        color: #000000;
+        margin: 4px 180px 8px 0px;
+    }
+
+.map-close {
+    //margin: 0px 0px 10px 80px;
+}
+
+.map-close-button {
+    width: 33px;
+    height: 33px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid #CCCCCC;
+    background-color: #FFFFFF;
+}
+
+.map-close-button:hover {
+    background-color: #EEEEEE;
+}
+
+.map-layers {
+}
+
