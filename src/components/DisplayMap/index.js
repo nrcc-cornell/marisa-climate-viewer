@@ -18,7 +18,7 @@ import { inject, observer } from "mobx-react";
 import Loader from 'react-loader-advanced';
 
 import 'leaflet/dist/leaflet.css';
-import Control from 'react-leaflet-control';
+//import Control from 'react-leaflet-control';
 //import { Map, GeoJSON, LayersControl, TileLayer } from 'react-leaflet';
 import { Map, GeoJSON, TileLayer } from 'react-leaflet';
 
