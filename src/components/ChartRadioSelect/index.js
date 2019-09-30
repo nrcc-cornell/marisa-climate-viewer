@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// Climate Smart Farming Climate Change in Your County
-// Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
+// MARISA Climate Change Tool
+// Copyright (c) 2019 Northeast Regional Climate Center
 // All Rights Reserved
 //
 // This software is published under the provisions of the GNU General Public
@@ -27,9 +27,9 @@ import '../../styles/ChartRadioSelect.css';
 class ChartRadioSelect extends Component {
 
   render() {
-        let accordion_type = false
-        let temperature_tab_status = true
-        let precipitation_tab_status = true
+        //let accordion_type = false
+        //let temperature_tab_status = true
+        //let precipitation_tab_status = true
 
         return (
             <div className='radio-input-div'>

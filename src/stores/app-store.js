@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// Climate Smart Farming Climate Change in Your County
-// Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
+// MARISA Climate Change Tool
+// Copyright (c) 2019 Northeast Regional Climate Center
 // All Rights Reserved
 //
 // This software is published under the provisions of the GNU General Public
@@ -135,7 +135,7 @@ export class AppStore {
     // -----------------------------------------------------------------------------------
     @observable projection_view = false;
     @action updateProjectionView = (changeEvent) => {
-        console.log(changeEvent.target.checked);
+        //console.log(changeEvent.target.checked);
         this.projection_view = changeEvent.target.checked
     };
     @action updateProjectionViewFromAccordion = () => {
@@ -943,7 +943,7 @@ export class AppStore {
       //.post("http://grid2.rcc-acis.org/GridData", params)
       .post(`${protocol}//grid2.rcc-acis.org/GridData`, params)
       .then(res => {
-        console.log('successful download of projection data : ' + scen + ' ' + re + ' 1950-2100');
+        //console.log('successful download of projection data : ' + scen + ' ' + re + ' 1950-2100');
         let data = {}
         data['years'] = []
         //data['gddGrowingSeason'] = []
